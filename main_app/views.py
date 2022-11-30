@@ -3,14 +3,14 @@ from django.http import HttpResponse
 
 # Create (your views here.
 def index(request):
-    return HttpResponse('Hello World :)')
+    return HttpResponse('index.html')
 
 def about(request):
-    return HttpResponse('About Page')
+    return HttpResponse('about.html')
 
 def contact(request):
-    return HttpResponse('contact')
+    return HttpResponse('contact.html')
 
-def page(request):
-    return HttpResponse('page')
+# def blog(request):
+#     return HttpResponse('blog')
       
