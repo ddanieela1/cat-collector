@@ -8,8 +8,15 @@
 </head>
 <body>
     <h1>About the catcollector...</h1>
+    {% for cat in cats %}
+        <p>Name: {{cat.name}}</p>
+        <p>Breed: {cat.breed}}</p>
+        <p>Age: {{cat.age}}</p>
+        <p>Description: {{cat.description}}</p>
+    {% endfor %}    
+
     <hr />
-    <p>Hire the catcollector!</p>
+    
     <footer>All Rights Reserved, CatCollector 2022</footer>
 </body>
 </html>
