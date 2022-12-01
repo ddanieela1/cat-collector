@@ -21,13 +21,16 @@ cats = [
 
 # Create (your views here.
 def index(request):
-    return HttpResponse(request, 'index.html',{'cats':cats})
+    return render(request, 'index.html',{'cats':cats})
 
 def about(request):
-    return HttpResponse(request, 'about.html')
+    return render(request, 'about.html')
 
 def contact(request):
-    return HttpResponse(request, 'contact.html')
+    return render(request, 'contact.html')
+
+def cats_index(request):
+    return render(request, 'cats/index.html',{'cats':cats} )    
 
 # def blog(request):
 #     return HttpResponse('blog')
